@@ -29,6 +29,7 @@ This repository contains two directories, one for each of the workloads to deplo
 - a Prometheus Operator Helm chart
 
 We can deploy both workloads, using this example:
+
 ```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
@@ -257,7 +258,7 @@ arbitrary value in the secret. This value will be used when configuring the webh
 ![Add Webhook](./assets/webhook-config.png "Add Webhook")
 
 !!! note
-    When creating the webhook in GitHub, the "Content type" needs to be set to "application/json". The default value "application/x-www-form-urlencoded" is not supported by the library used to handle the hooks
+    When creating the webhook in GitHub, the "Content type" needs to be set to "application/json". The default value "application/x-www-form-urlencoded" is not supported by the library used to handle the hooks.
 
 ### 2. Configure ApplicationSet with the webhook secret (Optional)
 
